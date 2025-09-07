@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+  background: #222;
+  color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin-left: 20px;
+}
+.faq.open .faq-answer {
+  display: block;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 10;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-content a:hover {
+  background: #eee;
+}
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+/* Tabs */
+.tabs {
+  margin: 10px 0;
+}
+.tablink {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+}
+.tablink.active {
+  background: #333;
+  color: white;
+}
+.tab-content {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+.tab-content.active {
+  display: block;
+}

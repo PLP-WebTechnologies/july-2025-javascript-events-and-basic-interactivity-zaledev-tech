@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 Welcome to Interactivity 🌟</h1>
+    <button id="modeToggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>🎉 Event Handling</h2>
+      <button id="messageBtn">Click Me!</button>
+      <p id="message"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>🎮 Interactive Features</h2>
+
+      <!-- Counter -->
+      <div class="counter">
+        <p>Counter: <span id="count">0</span></p>
+        <button id="increase">+</button>
+        <button id="decrease">-</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <!-- Collapsible FAQ -->
+      <div class="faq">
+        <h3 class="faq-question" tabindex="0">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+    </section>
+
+    <!-- Dropdown Menu -->
+    <section>
+      <h2>📂 Dropdown Menu</h2>
+      <div class="dropdown">
+        <button class="dropbtn" aria-expanded="false">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabbed Interface -->
+    <section>
+      <h2>📑 Tabbed Interface</h2>
+      <div class="tabs">
+        <button class="tablink" data-tab="tab1">Tab 1</button>
+        <button class="tablink" data-tab="tab2">Tab 2</button>
+        <button class="tablink" data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">This is content for Tab 1.</div>
+      <div class="tab-content" id="tab2">Welcome to Tab 2’s content.</div>
+      <div class="tab-content" id="tab3">Here is Tab 3 content.</div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" autocomplete="name" />
+          <span class="error" id="nameError"></span>
+        </label>
+        <br />
+
+        <label>
+          Email:
+          <input type="email" id="email" autocomplete="email" />
+          <span class="error" id="emailError"></span>
+        </label>
+        <br />
+
+        <label>
+          Password:
+          <input type="password" id="password" autocomplete="new-password" />
+          <span class="error" id="passwordError"></span>
+        </label>
+        <br />
+
+        <button type="submit">Sign Up</button>
+        <p id="formSuccess"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
